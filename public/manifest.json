@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Calc Me",
+  "name": "Calc Me Online Calculator",
   "icons": [
     {
       "src": "favicon.ico",
