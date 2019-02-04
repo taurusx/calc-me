@@ -1,0 +1,31 @@
+.FunctionsPad {
+  display: grid;
+  grid-template-columns: repeat(2, 3rem);
+  grid-gap: 0.7rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  grid-auto-flow: row dense;
+  margin-left: 2rem;
+}
+
+.FunctionsPad > :nth-last-child(1) {
+  grid-column: 2 / span 1;
+}
+
+.FunctionsPad > :nth-child(2) {
+  transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 21rem) {
+  .FunctionsPad {
+    grid-template-columns: repeat(2, 2.5rem);
+    margin: 0;
+    margin: 2rem 0;
+  }
+
+  .FunctionsPad > .Button {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}

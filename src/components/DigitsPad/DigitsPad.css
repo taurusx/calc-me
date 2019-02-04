@@ -1,0 +1,31 @@
+.DigitsPad {
+  display: grid;
+  grid-template-columns: repeat(3, 3rem);
+  grid-gap: 0.7rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+  grid-auto-flow: row dense;
+}
+
+.DigitsPad > :nth-last-child(1) {
+  grid-column: 2 / span 1;
+}
+
+.DigitsPad > :nth-last-child(2) {
+  grid-column: 3 / span 1;
+}
+
+@media only screen and (max-width: 21rem) {
+  .DigitsPad {
+    grid-template-columns: repeat(3, 2.5rem);
+    margin: 0;
+    margin: 2rem 0;
+  }
+
+  .DigitsPad > .Button {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
